@@ -8,6 +8,8 @@ The datasets being used here are standard datasets available in scikit-learn. Th
 
 The models are implemented keeping in mind the structure of models in scikit-learn. As such, each model is implemented inside its own class, and has functions like `fit` and `predict`.
 
+I will try to keep the codes as well commented as possible, such as mentioning what and why is happening in various parts of the code, and the things to keep in mind regarding that. Therefore, these codes can hopefully be used as learning or preparatory material for Machine Learning.
+
 ## Inspiration
 I am closely following the tutorials provided by "Python Engineer" at the following [link](https://github.com/azfar-imtiaz/ML-algo-implementations.git).
 
