@@ -13,5 +13,5 @@ I am closely following the tutorials provided by "Python Engineer" at the follow
 
 ## Algorithms implemented
 So far, the following algorithms have been implemented:
-- KNN
+- [KNN](https://github.com/azfar-imtiaz/ML-algo-implementations/tree/master/KNN)
 - Linear Regression
