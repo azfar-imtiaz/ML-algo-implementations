@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import make_regression
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import r2_score
 
 from linear_regression import LinearRegression
 
@@ -22,7 +23,9 @@ if __name__ == '__main__':
     predictions = regressor.predict(X_test)
 
     mse = calculate_mean_squared_error(Y_test, predictions)
+    r_score = r2_score(Y_test, predictions)
     print("The mean squared error of the regressor is: {}".format(mse))
+    print("The R-squared loss of the regressor is: {}".format(r2_score))
 
     y_pred_line = regressor.predict(X)
 
