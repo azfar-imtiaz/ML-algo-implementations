@@ -41,7 +41,8 @@ class NaiveBayesClassifier:
         return y_pred
 
     def _predict(self, x):
-        posteriors = np.zeros(len(self._classes))
+        # posteriors = np.zeros(len(self._classes))
+        posteriors = dict()
 
         for cl in self._classes:
             prior = self._priors[cl]
@@ -56,4 +57,5 @@ class NaiveBayesClassifier:
             posterior = np.sum(np.log(prior + cls_conditional_prob))
             posteriors[cl] = posterior
 
-        return np.argmax(posteriors)
+        # return np.argmax(posteriors)
+        return  max(posteriors, key = lambda k: posteriors[k])
