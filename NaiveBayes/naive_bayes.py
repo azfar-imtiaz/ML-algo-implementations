@@ -13,9 +13,12 @@ class NaiveBayesClassifier:
         num_classes = len(self._classes)
 
         # these all can be dictionaries too
-        self._priors = np.zeros(num_samples, dtype=np.float)
-        self._means = np.zeros((num_classes, num_features), dtype=np.float)
-        self._vars = np.zeros((num_classes, num_features), dtype=np.float)
+        # self._priors = np.zeros(num_samples, dtype=np.float)
+        # self._means = np.zeros((num_classes, num_features), dtype=np.float)
+        # self._vars = np.zeros((num_classes, num_features), dtype=np.float)
+        self._priors = dict()
+        self._means = dict()
+        self._vars = dict()
 
         for cl in self._classes:
             # first, get all records belonging to this class
@@ -28,8 +31,10 @@ class NaiveBayesClassifier:
             var = np.var(X_cls, axis=0)
 
             self._priors[cl] = prior
-            self._means[cl, :] = mean
-            self._vars[cl, :] = var
+            # self._means[cl, :] = mean
+            # self._vars[cl, :] = var
+            self._means[cl] = mean
+            self._vars[cl] = var
 
     def predict(self, X):
         y_pred = [self._predict(x) for x in X]
