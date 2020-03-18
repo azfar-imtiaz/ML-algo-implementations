@@ -11,10 +11,11 @@ The models are implemented keeping in mind the structure of models in scikit-lea
 I will try to keep the codes as well commented as possible, such as mentioning what and why is happening in various parts of the code, and the things to keep in mind regarding that. Therefore, these codes can hopefully be used as learning or preparatory material for Machine Learning.
 
 ## Inspiration
-I am closely following the tutorials provided by "Python Engineer" at the following [link](https://github.com/azfar-imtiaz/ML-algo-implementations.git).
+I am closely following the tutorials provided by "Python Engineer" at the following [link](https://www.youtube.com/playlist?list=PLqnslRFeH2Upcrywf-u2etjdxxkL8nl7E).
 
 ## Algorithms implemented
 So far, the following algorithms have been implemented:
 - [KNN](https://github.com/azfar-imtiaz/ML-algo-implementations/tree/master/KNN)
 - [Linear Regression](https://github.com/azfar-imtiaz/ML-algo-implementations/tree/master/LinearRegression)
 - [Logistic Regression](https://github.com/azfar-imtiaz/ML-algo-implementations/tree/master/LogisticRegression)
+- [Perceptron](https://github.com/azfar-imtiaz/ML-algo-implementations/tree/master/Perceptron)
